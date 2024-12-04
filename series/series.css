@@ -1,0 +1,97 @@
+/* Resetando o estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+/* Barra de navegação */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #141414;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #e50914;
+}
+
+/* Seção Séries */
+main {
+    padding-top: 70px; /* Espaço para a barra de navegação */
+}
+
+.series-category {
+    margin-bottom: 30px;
+}
+
+.series-category h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.series-list {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    gap: 50px;
+    padding: 20px 10px;
+}
+
+.series img {
+
+    width: 250px;
+    height: 350px;
+    object-fit:cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de zoom ao passar o mouse */
+.series img:hover {
+    transform: scale(1.1);
+}
+
+/* Rodapé */
+footer {
+    background-color: #141414;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+h2{
+    text-align: center;
+}
